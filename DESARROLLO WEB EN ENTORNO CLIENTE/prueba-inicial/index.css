@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #b8ccdb;
+    background-color:white;
 }
     
 header {
@@ -36,9 +36,22 @@ nav {
     color: #000000;
 }
     
-.menu-icon {
+.icono {
     display: none;
     cursor: pointer;
     font-size: 24px;
     margin-left: 10px;
 }
+
+
+@media (max-width: 600px) {
+.menu {
+ display: none;
+ }
+    }
+    
+    @media (max-width: 600px) {
+.icono {
+ display: block;
+ }
+    }
