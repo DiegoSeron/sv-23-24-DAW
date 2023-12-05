@@ -1,0 +1,5 @@
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\app\bankapp.exe
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\app\bankapp.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\app\bankapp.deps.json
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\app\bankapp.runtimeconfig.json
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\app\bankapp.pdb

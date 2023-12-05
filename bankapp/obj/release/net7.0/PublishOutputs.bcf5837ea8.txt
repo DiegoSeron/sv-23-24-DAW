@@ -1,0 +1,5 @@
+D:\app\bankapp.exe
+D:\app\bankapp.dll
+D:\app\bankapp.deps.json
+D:\app\bankapp.runtimeconfig.json
+D:\app\bankapp.pdb

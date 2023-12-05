@@ -1,0 +1,15 @@
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\bin\release\net7.0\bankapp.exe
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\bin\release\net7.0\bankapp.deps.json
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\bin\release\net7.0\bankapp.runtimeconfig.json
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\bin\release\net7.0\bankapp.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\bin\release\net7.0\bankapp.pdb
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.csproj.AssemblyReference.cache
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.AssemblyInfoInputs.cache
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.AssemblyInfo.cs
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.csproj.CoreCompileInputs.cache
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\refint\bankapp.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.pdb
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\bankapp.genruntimeconfig.cache
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\bankapp\obj\release\net7.0\ref\bankapp.dll
