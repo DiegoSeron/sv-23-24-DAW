@@ -1,0 +1,7 @@
+crear aplicaciones dotnet con netcore
+
+dotnet new (seleccion de plantillas)
+dotnet build (compilar)
+dotnet run
+dotnet publish
+dotnet new (plantilla) -f net6.0 (version 6.0)

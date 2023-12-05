@@ -1,0 +1,47 @@
+crear vpc con subreder (2 public 4 private)
+	Internet Gateway --> (actions)Attach VPC(web)
+		Route table -->Una public (edit routes -->0000000 add Internet Gateway)
+	NAT Gateway
+		Route table -->Una private (edit routes --> add NAT Gateway)
+		Ip elastica
+crear ec2 y rds (monolito) con script
+añadir usuario
+
+crear  2 securityGroup (SG3Tier-Uni) al VPC
+	Entrada -->HTTP (80)
+Entrada -->mysql (3306)
+##################
+desacoplamiento
+##################
+crear subnet group y añades zona disponi a y b
+crear rds ubuntu t3.micro
+subnet group SG3Tier-ddbb
+	user: nodeapp
+	password: student12
+	name: STUDENTS
+
+disable deletion protection
+
+crear cloud9 (vpc de la web)
+crear secrets manager a traves de cloud9 script 1
+aws secretsmanager create-secret \
+--secret-string "{\"user\":\"nodeapp\",\"password\":\"student12\",\"host\":\"ddbb-uni-v2.clsly9h7ekjw.us-east-1.rds.amazonaws.com\",\"db\":\"STUDENTS\"}"
+
+launch template (ubuntu con ami LabProfile!!!!!!!) // usar sg3Tier-Uni
+crear autoscaling / balanceador / EC2 
+	VPC uni y subred Private-A y Private-B
+	Protocol puerto 80 tg3Tier-Uni
+	internet facing
+target group (TG3Tier-university) y añadir zonas de disponibilidad
+crear securityGroup SG3Tier-MySQL y abrir puerto mysql solo peticiones grupo seguridad SG3Tier-Uni
+migrar ddbb
+cambiar secu group de monolito y abrir el 3306
+cambiar secu gruop bd abrir 3306 para 00000
+	mysqldump -h (ip priv monolito) -u nodeapp -p --databases STUDENTS > data.sql
+	mysql -h (endpoint bd) -u nodeapp -p  STUDENTS < data.sql
+
+
+
+
+
+

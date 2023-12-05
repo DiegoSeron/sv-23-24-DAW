@@ -1,0 +1,34 @@
+code dockerfile (fichero de texto)
+############
+##  .NET  ##
+############
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 (imagen en la que te vas a basar)
+WORKDIR /src (crea una carpeta dentro de docker que se llame src y se mete en ella)
+COPY . . (todos los ficheros a la altura del dockefile) (ruta del contenedor)
+RUN dotnet publish "bankapp.csproj" -c Release -o /app (publica la app de .NET)
+docker build -t bankapp:1.0 .
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
+WORKDIR /app
+COPY --from=build /app ./ (El /app debe coincidir con el /app del run de arriba)
+ENTRYPOINT ["dotnet", "bankapp.dll"]  (cada vez que hagas docer run realiza este comando)
+
+docker login
+docker push diegosp/bankapp:1.0
+
+
+############
+##  node  ##
+############
+
+FROM node:10-alpine
+RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+WORKDIR /home/node/app
+COPY package*.json ./
+USER node
+RUN npm install
+COPY --chown=node:node . .
+EXPOSE 8080
+
+CMD [ "node", "app.js" ]

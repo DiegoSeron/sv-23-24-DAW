@@ -1,0 +1,13 @@
+git
+
+pwd: ruta en la que te encuentras
+dir:carpetas
+mkdir (nombre de la carpeta):crear carpeta
+cd (nombre de la carpeta): se mete a la carpeta
+cat: leer un fichero
+git init: crer directorio de git
+gitk: all files
+git checkout -b (nombre de la rama): crea nueva rama y entra en la rama
+rm -r (nombre de la carpeta): borrar carpeta
+
+token: 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
